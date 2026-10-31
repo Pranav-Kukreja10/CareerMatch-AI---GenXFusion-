@@ -1,0 +1,20 @@
+# Git Ignore for CareerMatch AI Backend
+temp/
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+.env
+.venv/
+venv/
+*.log
+.DS_Store
+staticfiles/
+media/
+accounts
+skillsetu_backend
+students
+manage.py 
+requirements.txt
+*.json
+.env.example

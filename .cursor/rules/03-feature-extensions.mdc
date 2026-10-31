@@ -1,0 +1,9 @@
+---
+description: Rules for adding new features mid-hackathon without breaking existing CareerMatch AI pipelines
+globs: ["**/*"]
+alwaysApply: true
+---
+When asked to add a new feature or mentor-requested enhancement:
+1. **Backwards Compatibility:** All new database columns must be `nullable=True` (or have a `server_default`) and all new Pydantic/TypeScript fields on existing models must be `Optional` so you never break a teammate's active branch.
+2. **Vertical Slice Isolation:** Build new features as vertical slices (`routers/ext_*.py` + `src/features/*`) that read from the Stage 1-4 `CandidateAuditState` object rather than rewriting core pipeline files.
+3. **Skill Auto-Generation:** If the new feature introduces a new external API or complex logic (e.g., ElevenLabs voice viva, PDF report generator, LinkedIn scraper), automatically create a new `.agents/skills/ext-<name>/SKILL.md` file documenting its rules for the rest of the team.

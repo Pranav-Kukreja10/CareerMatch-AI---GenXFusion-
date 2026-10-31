@@ -1,0 +1,7 @@
+---
+description: Rules for React/Next.js DAG roadmap, Viva UI, and Proof-of-Work cards
+globs: ["frontend/**/*.tsx", "src/**/*.tsx"]
+alwaysApply: false
+---
+- Render Stage 4 Learning Roadmaps as interactive Directed Acyclic Graphs (React Flow / D3) showing `+X% Match Boost` badges on every node.
+- In Stage 3 Viva UI, attach a `visibilitychange` listener and countdown timer to compute the Time-Decay Multiplier (`M_t`) and display real-time Attestation Calibration (`R_s` vs `A_s` -> `CS`) animations for hackathon judges.

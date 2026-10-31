@@ -14,7 +14,7 @@ media/
 accounts
 skillsetu_backend
 students
-manage.py 
+manage.py
 requirements.txt
 *.json
 .env.example

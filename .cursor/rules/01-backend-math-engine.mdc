@@ -1,0 +1,10 @@
+---
+description: Exact mathematical formulas for Hybrid Matching and Attestation Calibration
+globs: ["backend/**/*.py", "app/**/*.py", "api/**/*.py"]
+alwaysApply: false
+---
+Enforce exact mathematical parity with the Track #16 specification:
+1. `FusionScore = 0.40 * jaccard + 0.45 * bge_384d_cosine + 0.15 * pg_fts`
+   - Thresholds: `>= 0.82` Direct, `0.55..0.819` Transferable, `< 0.55` Missing.
+2. `CS = A_s * (1 - 0.40 * sqrt(max(0, R_s - A_s) / 100))`
+3. Use Pydantic v2 `BaseModel` with strict field validation and async endpoints.

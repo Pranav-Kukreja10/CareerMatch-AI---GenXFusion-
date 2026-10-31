@@ -1,0 +1,8 @@
+---
+description: Core architecture and anti-slop rules for CareerMatch AI (Skill Setu)
+alwaysApply: true
+---
+- Project: CareerMatch AI (Skill Setu) — 4-Stage Evidence-Verified Talent Matching Engine.
+- Never write uploaded PDFs to disk (`io.BytesIO` only).
+- Never use generic placeholder data; all mock/seed profiles must reflect realistic GitHub commit histories and our 4-Tier Skill Ontology.
+- Keep diffs surgical. Run typecheckers (`ruff check`, `tsc --noEmit`) after every edit.
